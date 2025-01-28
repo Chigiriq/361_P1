@@ -1,16 +1,18 @@
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
-// File name: projects/1/And16.hdl
+// File name: projects/1/Mux16.hdl
 /**
- * 16-bit And gate:
+ * 16-bit multiplexor: 
  * for i = 0, ..., 15:
- * out[i] = a[i] And b[i] 
+ * if (sel = 0) out[i] = a[i], else out[i] = b[i]
  */
-CHIP And16 {
-    IN a[16], b[16];
+CHIP Mux16 {
+    IN a[16], b[16], sel;
     OUT out[16];
 
     PARTS:
     //// Replace this comment with your code.
+
+    //i swear if i have to write this out
 }
